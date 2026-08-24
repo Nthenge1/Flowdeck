@@ -329,4 +329,9 @@ public class WorkSpaceServiceImpl implements WorkSpaceService {
             byIdCache.evict(workspaceId + ":" + userId);
         }
     }
+
+    @Override
+    public void evictWorkspaceCachesFor(String email, Long userId, Long workspaceId) {
+        evictCachesForUser(email, userId, workspaceId);
+    }
 }

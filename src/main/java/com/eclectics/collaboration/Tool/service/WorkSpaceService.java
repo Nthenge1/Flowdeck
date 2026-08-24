@@ -28,4 +28,6 @@ public interface WorkSpaceService {
     WorkSpaceResponseDTO updateWorkspace(Long workspaceId, User user, WorkSpaceRequestDTO request);
 
     WorkSpaceResponseDTO getWorkspaceById(Long id, User user);
+
+    void evictWorkspaceCachesFor(String email, Long userId, Long workspaceId);
 }

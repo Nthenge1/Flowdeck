@@ -14,6 +14,7 @@ import com.eclectics.collaboration.Tool.repository.WorkSpaceMemberRepository;
 import com.eclectics.collaboration.Tool.repository.WorkSpaceReposiroty;
 import com.eclectics.collaboration.Tool.service.EmailService;
 import com.eclectics.collaboration.Tool.service.InvitationService;
+import com.eclectics.collaboration.Tool.service.WorkSpaceService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,6 +31,7 @@ public class InvitationServiceImpl implements InvitationService {
     private final EmailService emailService;
     private final UserRespository userRepository;
     private final WorkSpaceMemberRepository workSpaceMemberRepository;
+    private final WorkSpaceService workSpaceService;
 
     @Transactional
     @Override
@@ -62,6 +64,7 @@ public class InvitationServiceImpl implements InvitationService {
         }
 
         invitationRepository.delete(invite);
+        workSpaceService.evictWorkspaceCachesFor(managedInvitee.getEmail(), managedInvitee.getId(), ws.getId());
     }
 
     @Transactional
