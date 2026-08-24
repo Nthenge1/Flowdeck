@@ -178,30 +178,25 @@ public class EmailServiceImpl implements EmailService {
     public void sendInvitationEmail(String to, String token, String workspaceName) {
         String subject = "FLOWDECK WORKSPACE INVITE";
         String text = """
-            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px;">
-                <h2 style="color: #4F46E5;">You're Invited to Join a Workspace!</h2>
-                <p>Hello,</p>
-                <p>You've been invited to join the workspace: <strong>%s</strong></p>
-                <p>Choose your response below:</p>
-                <a href="http://syncboard-frontend-814g.onrender.com/accept-invite?token=%s"
-                   style="display:inline-block; padding:12px 24px; background-color:#4F46E5;
-                          color:white; text-decoration:none; border-radius:6px; margin: 8px 4px;">
-                   Accept Invite
-                </a>
-                <a href="http://syncboard-frontend-814g.onrender.com/reject-invite?token=%s"
-                   style="display:inline-block; padding:12px 24px; background-color:#e53e3e;
-                          color:white; text-decoration:none; border-radius:6px; margin: 8px 4px;">
-                   Decline Invite
-                </a>
-                <p style="color: #888; font-size: 13px;">This invite expires in 7 days.</p>
-                <br/>
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600"
-                     alt="Team Collaboration"
-                     style="width:100%%; max-width:500px; border-radius:8px; margin: 16px 0;" />
-                <br/>
-                <p>Best regards,<br/><strong>FLOWDECK</strong></p>
-            </div>
-            """.formatted(workspaceName, token, token);
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px;">
+            <h2 style="color: #4F46E5;">You're Invited to Join a Workspace!</h2>
+            <p>Hello,</p>
+            <p>You've been invited to join the workspace: <strong>%s</strong></p>
+            <p>Log in to your FLOWDECK account to accept or decline this invitation.</p>
+            <a href="https://flowdeckk.netlify.app/"
+               style="display:inline-block; padding:12px 24px; background-color:#4F46E5;
+                      color:white; text-decoration:none; border-radius:6px; margin: 8px 4px;">
+               Login here
+            </a>
+            <p style="color: #888; font-size: 13px;">This invite expires in 7 days.</p>
+            <br/>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600"
+                 alt="Team Collaboration"
+                 style="width:100%%; max-width:500px; border-radius:8px; margin: 16px 0;" />
+            <br/>
+            <p>Best regards,<br/><strong>FLOWDECK</strong></p>
+        </div>
+        """.formatted(workspaceName);
         sendEmail(to, subject, text);
     }
 
