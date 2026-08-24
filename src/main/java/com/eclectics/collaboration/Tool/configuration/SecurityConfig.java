@@ -40,8 +40,7 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(List.of(
                 "https://syncboard-frontend-814g.onrender.com",
-                "http://10.235.148.185:4200/",
-                "http://localhost:4200/"
+                "https://flowdeckk.netlify.app/"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
