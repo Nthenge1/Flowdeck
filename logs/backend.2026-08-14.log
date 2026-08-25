@@ -1,0 +1,249 @@
+2026-08-14 10:29:36 INFO  c.e.c.T.CollaborationToolApplication - Starting CollaborationToolApplication using Java 21.0.8 with PID 20488 (C:\Abraham\Code\Eclectics\Collaboration-Tool\target\classes started by pc in C:\Abraham\Code\Eclectics\Collaboration-Tool)
+2026-08-14 10:29:37 INFO  c.e.c.T.CollaborationToolApplication - The following 1 profile is active: "prod"
+2026-08-14 10:29:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-14 10:29:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 727 ms. Found 22 JPA repository interfaces.
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.ActivityLogRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.BoardMemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.BoardsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.CardAssigneeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.CardLabelRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.CardRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.FAQRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.InvitationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.IssueRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.LabelRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.ListEntityRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.NotificationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.RefreshTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.StarredBoardRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.StarredWorkspaceRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.SystemConfigRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.TalkRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.UserRecentBoardRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.UserRespository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.WorkSpaceMemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.eclectics.collaboration.Tool.repository.WorkSpaceReposiroty; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-14 10:29:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138 ms. Found 0 Redis repository interfaces.
+2026-08-14 10:29:45 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8084 (http)
+2026-08-14 10:29:45 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8084"]
+2026-08-14 10:29:45 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-14 10:29:45 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-08-14 10:29:45 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 8332 ms
+2026-08-14 10:29:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-14 10:29:46 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33356666
+2026-08-14 10:29:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-14 10:29:47 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-14 10:29:47 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-08-14 10:29:49 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-14 10:29:50 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/collaborationTool]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: collaborationTool/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-14 10:29:55 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-14 10:29:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-14 10:29:56 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-14 10:30:34 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-14 10:30:35 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-08-14 10:30:39 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2026-08-14 10:30:39 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4d439b3c]]
+2026-08-14 10:30:39 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2026-08-14 10:30:39 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8084"]
+2026-08-14 10:30:39 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8084 (http) with context path '/'
+2026-08-14 10:30:39 INFO  c.e.c.T.CollaborationToolApplication - Started CollaborationToolApplication in 65.484 seconds (process running for 83.323)
+2026-08-14 10:30:40 INFO  c.e.c.Tool.configuration.AdminSeeder - >>> Admin already exists, skipping: nthengeabraham952@gmail.com
+2026-08-14 10:30:40 INFO  c.e.c.Tool.configuration.AdminSeeder - >>> Admin already exists, skipping: chepkemoisheilah794@gmail.com
+2026-08-14 10:31:39 INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 2]
+2026-08-14 11:01:39 INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 63]
+2026-08-14 11:06:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-14 11:06:14 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-14 11:06:14 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 367 ms
+2026-08-14 11:06:16 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 11:09:51 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 11:10:08 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/login | Tokens remaining: 50
+2026-08-14 11:10:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/my-workspaces | Tokens remaining: 50
+2026-08-14 11:10:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/scratchpad | Tokens remaining: 49
+2026-08-14 11:10:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/starred | Tokens remaining: 48
+2026-08-14 11:10:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/starred | Tokens remaining: 47
+2026-08-14 11:10:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/recent-boards | Tokens remaining: 46
+2026-08-14 11:10:20 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/workspace/1 | Tokens remaining: 50
+2026-08-14 11:10:20 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/1/lists | Tokens remaining: 49
+2026-08-14 11:10:21 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/4/cards | Tokens remaining: 48
+2026-08-14 11:10:21 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/2/cards | Tokens remaining: 47
+2026-08-14 11:10:21 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/3/cards | Tokens remaining: 46
+2026-08-14 11:10:21 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/5/cards | Tokens remaining: 45
+2026-08-14 11:10:21 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/1/cards | Tokens remaining: 46
+2026-08-14 11:11:12 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 11:11:12 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 49
+2026-08-14 11:12:06 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 11:21:53 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 11:21:53 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 49
+2026-08-14 11:21:54 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 48
+2026-08-14 11:22:15 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 11:22:15 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 49
+2026-08-14 11:22:16 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 48
+2026-08-14 11:22:53 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 11:22:53 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 49
+2026-08-14 11:22:54 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 48
+2026-08-14 11:26:15 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/my-workspaces | Tokens remaining: 50
+2026-08-14 11:26:15 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/recent-boards | Tokens remaining: 49
+2026-08-14 11:26:15 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/starred | Tokens remaining: 48
+2026-08-14 11:26:15 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/starred | Tokens remaining: 47
+2026-08-14 11:26:15 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/scratchpad | Tokens remaining: 46
+2026-08-14 11:26:15 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T08:25:09Z. Current time: 2026-08-14T08:26:15Z, a difference of 66829 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 11:26:16 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T08:25:09Z. Current time: 2026-08-14T08:26:15Z, a difference of 66724 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 11:26:16 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T08:25:09Z. Current time: 2026-08-14T08:26:15Z, a difference of 66815 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 11:26:16 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T08:25:09Z. Current time: 2026-08-14T08:26:15Z, a difference of 66815 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 11:26:16 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T08:25:09Z. Current time: 2026-08-14T08:26:15Z, a difference of 66769 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 11:26:16 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/refresh | Tokens remaining: 45
+2026-08-14 11:26:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/starred | Tokens remaining: 45
+2026-08-14 11:26:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/recent-boards | Tokens remaining: 44
+2026-08-14 11:26:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/scratchpad | Tokens remaining: 43
+2026-08-14 11:26:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/starred | Tokens remaining: 42
+2026-08-14 11:26:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/my-workspaces | Tokens remaining: 41
+2026-08-14 11:26:18 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/workspace/1 | Tokens remaining: 41
+2026-08-14 11:26:18 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/1/lists | Tokens remaining: 40
+2026-08-14 11:26:19 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 39
+2026-08-14 11:26:19 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 38
+2026-08-14 11:26:19 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/1/cards | Tokens remaining: 38
+2026-08-14 11:26:19 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/4/cards | Tokens remaining: 37
+2026-08-14 11:26:19 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/3/cards | Tokens remaining: 36
+2026-08-14 11:26:19 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/2/cards | Tokens remaining: 36
+2026-08-14 11:26:19 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/5/cards | Tokens remaining: 34
+2026-08-14 11:31:39 INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 124]
+2026-08-14 11:32:19 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 11:32:20 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 49
+2026-08-14 11:32:20 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 48
+2026-08-14 11:37:01 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 11:37:01 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 49
+2026-08-14 11:39:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/my-workspaces | Tokens remaining: 50
+2026-08-14 11:39:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/scratchpad | Tokens remaining: 49
+2026-08-14 11:39:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/recent-boards | Tokens remaining: 48
+2026-08-14 11:39:11 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/starred | Tokens remaining: 47
+2026-08-14 11:39:11 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/starred | Tokens remaining: 47
+2026-08-14 11:39:11 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/workspace/1 | Tokens remaining: 45
+2026-08-14 11:39:12 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/1/lists | Tokens remaining: 44
+2026-08-14 11:39:12 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/2/cards | Tokens remaining: 44
+2026-08-14 11:39:12 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/1/cards | Tokens remaining: 43
+2026-08-14 11:39:12 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/4/cards | Tokens remaining: 42
+2026-08-14 11:39:12 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/3/cards | Tokens remaining: 44
+2026-08-14 11:39:12 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/5/cards | Tokens remaining: 40
+2026-08-14 11:39:40 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 11:39:40 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 49
+2026-08-14 11:52:03 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 11:52:03 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 49
+2026-08-14 11:52:03 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T08:41:17Z. Current time: 2026-08-14T08:52:03Z, a difference of 646309 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 11:52:03 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T08:41:17Z. Current time: 2026-08-14T08:52:03Z, a difference of 646340 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 11:52:03 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/refresh | Tokens remaining: 48
+2026-08-14 11:52:03 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 47
+2026-08-14 11:52:03 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 47
+2026-08-14 12:01:00 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 12:01:00 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 12:01:39 INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 186]
+2026-08-14 12:01:56 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 12:01:56 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 49
+2026-08-14 12:02:55 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 12:02:55 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 49
+2026-08-14 12:08:41 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 12:08:41 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T09:07:03Z. Current time: 2026-08-14T09:08:41Z, a difference of 98246 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 12:08:41 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 49
+2026-08-14 12:08:41 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T09:07:03Z. Current time: 2026-08-14T09:08:41Z, a difference of 98312 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 12:08:42 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/refresh | Tokens remaining: 48
+2026-08-14 12:08:42 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 47
+2026-08-14 12:08:42 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 46
+2026-08-14 12:11:41 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 12:11:41 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 49
+2026-08-14 12:11:54 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 12:11:54 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 12:18:55 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 12:18:55 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 49
+2026-08-14 12:19:42 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 12:19:42 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 49
+2026-08-14 12:20:21 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 12:20:21 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 12:20:57 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/my-workspaces | Tokens remaining: 50
+2026-08-14 12:20:57 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/starred | Tokens remaining: 49
+2026-08-14 12:20:57 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/scratchpad | Tokens remaining: 49
+2026-08-14 12:20:57 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/starred | Tokens remaining: 47
+2026-08-14 12:20:57 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/recent-boards | Tokens remaining: 46
+2026-08-14 12:20:57 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/workspace/1 | Tokens remaining: 45
+2026-08-14 12:20:58 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/1/lists | Tokens remaining: 44
+2026-08-14 12:20:58 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/2/cards | Tokens remaining: 44
+2026-08-14 12:20:58 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/4/cards | Tokens remaining: 43
+2026-08-14 12:20:58 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/5/cards | Tokens remaining: 42
+2026-08-14 12:20:58 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/3/cards | Tokens remaining: 41
+2026-08-14 12:20:58 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/1/cards | Tokens remaining: 40
+2026-08-14 12:21:04 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 43
+2026-08-14 12:21:04 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 42
+2026-08-14 12:24:31 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 12:24:31 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 49
+2026-08-14 12:24:31 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T09:23:42Z. Current time: 2026-08-14T09:24:31Z, a difference of 49712 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 12:24:31 WARN  c.e.c.Tool.security.JwtFilter - JWT Expired: JWT expired at 2026-08-14T09:23:42Z. Current time: 2026-08-14T09:24:31Z, a difference of 49821 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-08-14 12:24:31 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/refresh | Tokens remaining: 48
+2026-08-14 12:24:32 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 47
+2026-08-14 12:24:32 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 46
+2026-08-14 12:31:39 INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 247]
+2026-08-14 12:32:53 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 50
+2026-08-14 12:32:53 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 49
+2026-08-14 12:33:02 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 12:33:02 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 49
+2026-08-14 12:33:07 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/scratchpad | Tokens remaining: 50
+2026-08-14 12:33:08 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/my-workspaces | Tokens remaining: 49
+2026-08-14 12:33:08 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/recent-boards | Tokens remaining: 48
+2026-08-14 12:33:08 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/starred | Tokens remaining: 47
+2026-08-14 12:33:08 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/starred | Tokens remaining: 46
+2026-08-14 12:33:08 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/workspace/1 | Tokens remaining: 45
+2026-08-14 12:33:09 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/1/lists | Tokens remaining: 44
+2026-08-14 12:33:09 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/4/cards | Tokens remaining: 44
+2026-08-14 12:33:09 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/1/cards | Tokens remaining: 43
+2026-08-14 12:33:09 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/5/cards | Tokens remaining: 42
+2026-08-14 12:33:09 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/2/cards | Tokens remaining: 41
+2026-08-14 12:33:09 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/3/cards | Tokens remaining: 40
+2026-08-14 12:33:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 40
+2026-08-14 12:33:15 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/login | Tokens remaining: 42
+2026-08-14 12:33:16 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/scratchpad | Tokens remaining: 42
+2026-08-14 12:33:16 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/recent-boards | Tokens remaining: 41
+2026-08-14 12:33:16 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/starred | Tokens remaining: 40
+2026-08-14 12:33:16 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/starred | Tokens remaining: 39
+2026-08-14 12:33:16 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/my-workspaces | Tokens remaining: 42
+2026-08-14 12:33:16 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/workspace/1 | Tokens remaining: 38
+2026-08-14 12:33:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/1/lists | Tokens remaining: 37
+2026-08-14 12:33:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/1/cards | Tokens remaining: 37
+2026-08-14 12:33:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/3/cards | Tokens remaining: 36
+2026-08-14 12:33:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/4/cards | Tokens remaining: 35
+2026-08-14 12:33:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/2/cards | Tokens remaining: 34
+2026-08-14 12:33:17 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/5/cards | Tokens remaining: 33
+2026-08-14 12:33:40 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /faqs/active | Tokens remaining: 50
+2026-08-14 12:33:40 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /issues/active | Tokens remaining: 49
+2026-08-14 12:34:02 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/update | Tokens remaining: 50
+2026-08-14 12:34:09 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/my-workspaces | Tokens remaining: 50
+2026-08-14 12:34:09 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/recent-boards | Tokens remaining: 49
+2026-08-14 12:34:09 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /workspace/starred | Tokens remaining: 48
+2026-08-14 12:34:09 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/starred | Tokens remaining: 47
+2026-08-14 12:34:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /user/scratchpad | Tokens remaining: 46
+2026-08-14 12:34:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/workspace/1 | Tokens remaining: 45
+2026-08-14 12:34:10 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /boards/1/lists | Tokens remaining: 44
+2026-08-14 12:34:11 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/1/cards | Tokens remaining: 44
+2026-08-14 12:34:11 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/2/cards | Tokens remaining: 44
+2026-08-14 12:34:11 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/3/cards | Tokens remaining: 42
+2026-08-14 12:34:11 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/4/cards | Tokens remaining: 41
+2026-08-14 12:34:11 INFO  c.e.c.Tool.security.RateLimitFilter - Request from IP: 10.235.148.185 | URI: /cards/lists/5/cards | Tokens remaining: 40
+2026-08-14 13:00:18 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-14 13:00:18 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-08-14 13:00:18 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2026-08-14 13:00:18 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4d439b3c]]
+2026-08-14 13:00:18 INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2026-08-14 13:00:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-14 13:00:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-14 13:00:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
