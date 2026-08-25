@@ -1,0 +1,63 @@
+spring:
+  data:
+    redis:
+      url: ${REDIS_URL}
+      lettuce:
+        pool:
+          enabled: false
+  datasource:
+    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    hikari:
+      maximum-pool-size: 20
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: public
+  mail:
+    host: smtp-relay.brevo.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+brevo:
+  api-key: ${BREVO_API_KEY}
+  from-email: ${BREVO_FROM_EMAIL}
+  from-name: ${BREVO_FROM_NAME}
+
+server:
+  port: 8084
+
+alibaba:
+  cloud:
+    oss:
+      endpoint: https://oss-eu-west-1.aliyuncs.com
+      access-key-id: ${OSS_KEY}
+      access-key-secret: ${OSS_SECRET}
+      bucket-name: jagarage
+
+jwt:
+  secret: ${JWT_SECRET}
+
+admin:
+  one:
+    email: ${ADMIN_ONE_EMAIL}
+    password: ${ADMIN_ONE_PASSWORD}
+  two:
+    email: ${ADMIN_TWO_EMAIL}
+    password: ${ADMIN_TWO_PASSWORD}
+
+app:
+  message: "This is the Production environment"
