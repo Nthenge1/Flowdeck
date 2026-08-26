@@ -120,6 +120,7 @@ public class NotificationServiceImpl implements NotificationService {
                 .emailOnBoardAdd(p.isEmailOnBoardAdd()).inAppOnBoardAdd(p.isInAppOnBoardAdd())
                 .emailOnMention(p.isEmailOnMention()).inAppOnMention(p.isInAppOnMention())
                 .emailOnDueSoon(p.isEmailOnDueSoon()).inAppOnDueSoon(p.isInAppOnDueSoon())
+                .weeklyDigest(p.isWeeklyDigest())
                 .build();
     }
 
