@@ -39,6 +39,7 @@ public class User {
 
     private LocalDateTime createdAt;
     private boolean enabled = false;
+    private boolean hasSeenOnboarding = false;
 
     @Column(columnDefinition = "TEXT")
     private String scratchpadContent;

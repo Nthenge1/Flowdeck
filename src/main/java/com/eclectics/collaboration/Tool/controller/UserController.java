@@ -112,6 +112,20 @@ public class UserController {
         return ResponseHandler.generateResponse("Password updated successfully.", HttpStatus.CREATED, null, request.getRequestURI());
     }
 
+    @Operation(summary = "Mark the onboarding tour as completed for the current user")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Onboarding marked complete"),
+            @ApiResponse(responseCode = "401", description = "Unauthorized")
+    })
+    @PatchMapping("/onboarding-complete")
+    public ResponseEntity<Object> completeOnboarding(
+            @RequestHeader("Authorization") String tokenHeader
+    ) {
+        String token = tokenHeader.replace("Bearer ", "");
+        userService.markOnboardingComplete(token);
+        return ResponseHandler.generateResponse("Onboarding marked complete", HttpStatus.OK, null, request.getRequestURI());
+    }
+
     @Operation(summary = "Update account profile details")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "User profile updated successfully"),

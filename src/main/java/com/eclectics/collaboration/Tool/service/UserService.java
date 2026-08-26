@@ -8,6 +8,9 @@ import java.io.IOException;
 public interface UserService {
     UserRegistrationResponseDTO createUser(UserRegistrationRequestDTO requestDTO, MultipartFile avatarUrl) throws IOException;
     UserLoginResponseDTO userLogin(UserLoginRequestDTO user);
+
+    void markOnboardingComplete(String token);
+
     UserEmailDTO userSendResetPassword(UserEmailDTO user);
     void userUpdatePassword(String token, String newPassword);
     UserRegistrationRequestDTO updateUser(String token, UserRegistrationRequestDTO userDTO);

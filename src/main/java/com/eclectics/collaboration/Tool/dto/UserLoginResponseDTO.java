@@ -11,20 +11,12 @@ public class UserLoginResponseDTO {
     private String sirName;
     private String avatarUrl;
     private OveralRole role;
+    private boolean hasSeenOnboarding;
 
     public UserLoginResponseDTO() {
     }
 
-    public UserLoginResponseDTO(Long id, String email, String token, String firstName, String refreshToken, OveralRole role) {
-        this.id = id;
-        this.email = email;
-        this.token = token;
-        this.firstName = firstName;
-        this.refreshToken = refreshToken;
-        this.role = role;
-    }
-
-    public UserLoginResponseDTO(Long id, String email, String token, String firstName, String sirName, String avatarUrl, String refreshToken, OveralRole role) {
+    public UserLoginResponseDTO(Long id, String email, String token, String firstName, String sirName, String avatarUrl, String refreshToken, OveralRole role, Boolean hasSeenOnboarding) {
         this.id = id;
         this.email = email;
         this.token = token;
@@ -33,6 +25,15 @@ public class UserLoginResponseDTO {
         this.avatarUrl = avatarUrl;
         this.refreshToken = refreshToken;
         this.role = role;
+        this.hasSeenOnboarding = hasSeenOnboarding;
+    }
+
+    public boolean isHasSeenOnboarding() {
+        return hasSeenOnboarding;
+    }
+
+    public void setHasSeenOnboarding(boolean hasSeenOnboarding) {
+        this.hasSeenOnboarding = hasSeenOnboarding;
     }
 
     public Long getId() {

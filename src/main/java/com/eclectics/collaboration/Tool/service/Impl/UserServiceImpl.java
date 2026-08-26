@@ -107,7 +107,17 @@ public class UserServiceImpl implements UserService {
         String token = jwtUtil.generateToken(user.getEmail(), user.getRole());
         RefreshToken refreshToken = refreshTokenService.createRefreshToken(user.getEmail());
 
-        return new UserLoginResponseDTO(user.getId(), user.getEmail(), token, user.getFirstName(), user.getSirName(), user.getAvatarUrl(), refreshToken.getToken(), user.getRole());
+        return new UserLoginResponseDTO(user.getId(), user.getEmail(), token, user.getFirstName(), user.getSirName(), user.getAvatarUrl(), refreshToken.getToken(), user.getRole(), user.isHasSeenOnboarding());
+    }
+
+    @Override
+    public void markOnboardingComplete(String token) {
+        String email = jwtUtil.extractEmail(token);
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new CollaborationExceptions.ResourceNotFoundException("User not found"));
+
+        user.setHasSeenOnboarding(true);
+        userRepository.save(user);
     }
 
     @Override
