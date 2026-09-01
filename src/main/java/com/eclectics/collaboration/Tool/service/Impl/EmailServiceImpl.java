@@ -57,7 +57,7 @@ public class EmailServiceImpl implements EmailService {
         String subject = "FLOWDECK ACCOUNT CONFIRMATION";
         String text = """
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px;">
-                <h2 style="color: #4F46E5;">Welcome to FLOEDECK!</h2>
+                <h2 style="color: #4F46E5;">Welcome to FLOWDECK!</h2>
                 <p>Hello,</p>
                 <p>Thank you for registering! Please confirm your account by clicking the button below:</p>
                 <a href="%s"
