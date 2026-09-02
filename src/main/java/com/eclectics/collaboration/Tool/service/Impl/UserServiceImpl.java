@@ -77,9 +77,16 @@ public class UserServiceImpl implements UserService {
             savedUser.setAvatarUrl(uploadedUrl);
             userRepository.save(savedUser);
         }
-        sendConfirmationEmail(savedUser);
+        String token = jwtUtil.generateEmailConfirmationToken(savedUser.getEmail());
+        String confirmLink = "https://flowdeckk.netlify.app/confirm-account?token=" + token;
 
-        return new UserRegistrationResponseDTO(savedUser.getFirstName(), null);
+        try {
+            emailService.sendAccountConfirmationEmail(savedUser.getEmail(), confirmLink);
+        } catch (Exception e) {
+            log.error("Failed to send Email to user, but user saved", e);
+        }
+
+        return new UserRegistrationResponseDTO(savedUser.getFirstName(), token);
     }
 
     @Override
@@ -171,18 +178,6 @@ public class UserServiceImpl implements UserService {
         user.setEnabled(true);
         userRepository.save(user);
         log.info("Account confirmed for email={}", email);
-    }
-
-    @Override
-    public void resendConfirmationEmail(String email) {
-        User user = userRepository.findByEmail(email)
-                .orElseThrow(() -> new CollaborationExceptions.ResourceNotFoundException("User not found"));
-
-        if (user.isEnabled()) {
-            throw new CollaborationExceptions.ResourceAlreadyExistsException("Account already confirmed, please login");
-        }
-
-        sendConfirmationEmail(user);
     }
 
     @Override
@@ -326,16 +321,5 @@ public class UserServiceImpl implements UserService {
             return url.substring(prefix.length());
         }
         return null;
-    }
-
-    private void sendConfirmationEmail(User user) {
-        String token = jwtUtil.generateEmailConfirmationToken(user.getEmail());
-        String confirmLink = "https://flowdeckk.netlify.app/confirm-account?token=" + token;
-
-        try {
-            emailService.sendAccountConfirmationEmail(user.getEmail(), confirmLink);
-        } catch (Exception e) {
-            log.error("Failed to send Email to user, but user saved", e);
-        }
     }
 }
