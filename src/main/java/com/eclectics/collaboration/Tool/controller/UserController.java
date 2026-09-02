@@ -94,6 +94,7 @@ public class UserController {
     @PostMapping("/resend-confirmation")
     public ResponseEntity<Object> resendConfirmation(
             @RequestBody UserEmailDTO userEmailDTO
+
     ) {
         try {
             userService.resendConfirmationEmail(userEmailDTO.getEmail());
