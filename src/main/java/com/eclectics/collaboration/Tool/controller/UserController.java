@@ -62,7 +62,7 @@ public class UserController {
             @ApiResponse(responseCode = "400", description = "Invalid or broken confirmation token"),
             @ApiResponse(responseCode = "409", description = "Account is already confirmed")
     })
-    @GetMapping("/confirm")
+    @PostMapping("/confirm")
     public ResponseEntity<Object> confirmAccount(
             @RequestParam("token") String token
     ) {
