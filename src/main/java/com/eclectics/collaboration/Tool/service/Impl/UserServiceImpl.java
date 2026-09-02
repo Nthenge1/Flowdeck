@@ -78,7 +78,7 @@ public class UserServiceImpl implements UserService {
             userRepository.save(savedUser);
         }
         String token = jwtUtil.generateEmailConfirmationToken(savedUser.getEmail());
-        String confirmLink = "https://syncboard-frontend-814g.onrender.com/confirm-account?token=" + token;
+        String confirmLink = "https://flowdeckk.netlify.app/confirm-account?token=" + token;
 
         try {
             emailService.sendAccountConfirmationEmail(savedUser.getEmail(), confirmLink);
@@ -125,7 +125,7 @@ public class UserServiceImpl implements UserService {
         return userRepository.findByEmail(userEmailDTO.getEmail())
                 .map(user -> {
                     String resetToken = jwtUtil.generateResetPasswordToken(user.getEmail());
-                    String resetLink = "https://syncboard-frontend-814g.onrender.com/reset-password?token=" + resetToken;
+                    String resetLink = "https://flowdeckk.netlify.app/reset-password?token=" + resetToken;
 
                     emailService.sendPasswordResetEmail(user.getEmail(), resetLink);
 
