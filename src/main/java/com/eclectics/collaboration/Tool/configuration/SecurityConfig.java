@@ -110,6 +110,7 @@ public class SecurityConfig {
                                 "/user/**",
                                 "/user/login",
                                 "/user/register",
+                                "/user/resend-confirmation",
                                 "/user/reset-password",
                                 "/user/confirm",
                                 "/faqs/active",

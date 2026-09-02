@@ -77,16 +77,9 @@ public class UserServiceImpl implements UserService {
             savedUser.setAvatarUrl(uploadedUrl);
             userRepository.save(savedUser);
         }
-        String token = jwtUtil.generateEmailConfirmationToken(savedUser.getEmail());
-        String confirmLink = "https://syncboard-frontend-814g.onrender.com/confirm-account?token=" + token;
+        sendConfirmationEmail(savedUser);
 
-        try {
-            emailService.sendAccountConfirmationEmail(savedUser.getEmail(), confirmLink);
-        } catch (Exception e) {
-            log.error("Failed to send Email to user, but user saved", e);
-        }
-
-        return new UserRegistrationResponseDTO(savedUser.getFirstName(), token);
+        return new UserRegistrationResponseDTO(savedUser.getFirstName(), null);
     }
 
     @Override
@@ -125,7 +118,7 @@ public class UserServiceImpl implements UserService {
         return userRepository.findByEmail(userEmailDTO.getEmail())
                 .map(user -> {
                     String resetToken = jwtUtil.generateResetPasswordToken(user.getEmail());
-                    String resetLink = "https://syncboard-frontend-814g.onrender.com/reset-password?token=" + resetToken;
+                    String resetLink = "https://flowdeckk.netlify.app/reset-password?token=" + resetToken;
 
                     emailService.sendPasswordResetEmail(user.getEmail(), resetLink);
 
@@ -178,6 +171,18 @@ public class UserServiceImpl implements UserService {
         user.setEnabled(true);
         userRepository.save(user);
         log.info("Account confirmed for email={}", email);
+    }
+
+    @Override
+    public void resendConfirmationEmail(String email) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new CollaborationExceptions.ResourceNotFoundException("User not found"));
+
+        if (user.isEnabled()) {
+            throw new CollaborationExceptions.ResourceAlreadyExistsException("Account already confirmed, please login");
+        }
+
+        sendConfirmationEmail(user);
     }
 
     @Override
@@ -321,5 +326,16 @@ public class UserServiceImpl implements UserService {
             return url.substring(prefix.length());
         }
         return null;
+    }
+
+    private void sendConfirmationEmail(User user) {
+        String token = jwtUtil.generateEmailConfirmationToken(user.getEmail());
+        String confirmLink = "https://flowdeckk.netlify.app/confirm-account?token=" + token;
+
+        try {
+            emailService.sendAccountConfirmationEmail(user.getEmail(), confirmLink);
+        } catch (Exception e) {
+            log.error("Failed to send Email to user, but user saved", e);
+        }
     }
 }

@@ -85,6 +85,35 @@ public class UserController {
         }
     }
 
+    @Operation(summary = "Resend account confirmation email")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "201", description = "Confirmation email resent"),
+            @ApiResponse(responseCode = "404", description = "User not found"),
+            @ApiResponse(responseCode = "409", description = "Account already confirmed")
+    })
+    @PostMapping("/resend-confirmation")
+    public ResponseEntity<Object> resendConfirmation(
+            @RequestBody UserEmailDTO userEmailDTO
+    ) {
+        try {
+            userService.resendConfirmationEmail(userEmailDTO.getEmail());
+            return ResponseHandler.generateResponse(
+                    "Confirmation email resent, please check your inbox",
+                    HttpStatus.CREATED, null, request.getRequestURI()
+            );
+        } catch (CollaborationExceptions.ResourceAlreadyExistsException e) {
+            return ResponseHandler.generateResponse(
+                    "Account already confirmed, please login",
+                    HttpStatus.CONFLICT, null, request.getRequestURI()
+            );
+        } catch (CollaborationExceptions.ResourceNotFoundException e) {
+            return ResponseHandler.generateResponse(
+                    "No account found with that email",
+                    HttpStatus.NOT_FOUND, null, request.getRequestURI()
+            );
+        }
+    }
+
     @Operation(summary = "Request a password reset email link")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Password reset request processed successfully"),

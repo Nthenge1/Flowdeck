@@ -15,6 +15,9 @@ public interface UserService {
     void userUpdatePassword(String token, String newPassword);
     UserRegistrationRequestDTO updateUser(String token, UserRegistrationRequestDTO userDTO);
     void userConfirmAccount(String token);
+
+    void resendConfirmationEmail(String email);
+
     void userDeleteAccount(String token);
 
     TokenRefreshResponseDTO refreshToken(String requestToken);
