@@ -64,7 +64,11 @@ public class InvitationServiceImpl implements InvitationService {
         }
 
         invitationRepository.delete(invite);
-        workSpaceService.evictWorkspaceCachesFor(managedInvitee.getEmail(), managedInvitee.getId(), ws.getId());
+
+        workSpaceService.evictWorkspaceCachesFor(ws.getWorkSpaceOwnerId().getEmail(), ws.getWorkSpaceOwnerId().getId(), ws.getId());
+        workSpaceMemberRepository.findByWorkspace_Id(ws.getId()).forEach(m ->
+                workSpaceService.evictWorkspaceCachesFor(m.getUser().getEmail(), m.getUser().getId(), ws.getId())
+        );
     }
 
     @Transactional
