@@ -18,6 +18,13 @@ public class LabelController {
 
     private final LabelService labelService;
 
+    @GetMapping("/boards/{boardId}/labels/{labelId}/exists")
+    public ResponseEntity<Boolean> labelExists(
+            @PathVariable Long boardId,
+            @PathVariable Long labelId) {
+        return ResponseEntity.ok(labelService.labelExistsOnBoard(boardId, labelId));
+    }
+
     @PostMapping("/boards/{boardId}/labels")
     public ResponseEntity<LabelResponseDTO> createLabel(
             @PathVariable Long boardId,

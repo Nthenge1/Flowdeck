@@ -63,4 +63,9 @@ public class LabelServiceImpl implements LabelService {
 
         labelRepository.delete(label);
     }
+
+    @Override
+    public boolean labelExistsOnBoard(Long boardId, Long labelId) {
+        return labelRepository.existsByIdAndBoardId(labelId, boardId);
+    }
 }

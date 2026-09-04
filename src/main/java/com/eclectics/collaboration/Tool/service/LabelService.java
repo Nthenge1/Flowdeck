@@ -9,4 +9,6 @@ public interface LabelService {
     LabelResponseDTO createLabel(Long boardId, LabelRequestDTO dto, Long userId);
     List<LabelResponseDTO> getLabelsByBoard(Long boardId);
     void deleteLabel(Long labelId, Long userId);
+
+    boolean labelExistsOnBoard(Long boardId, Long labelId);
 }
