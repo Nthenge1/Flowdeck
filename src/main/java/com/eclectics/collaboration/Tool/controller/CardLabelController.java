@@ -45,27 +45,27 @@ public class CardLabelController {
         );
     }
 
-    @Operation(summary = "Add a label to a card")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Label added successfully"),
-            @ApiResponse(responseCode = "400", description = "Label already applied or from a different board"),
-            @ApiResponse(responseCode = "404", description = "Card or label not found")
-    })
-    @PostMapping("/{labelId}")
-    public ResponseEntity<Object> addLabelToCard(
-            @PathVariable Long cardId,
-            @PathVariable Long labelId,
-            @AuthenticationPrincipal CustomUserDetails userDetails) {
-
-        cardLabelService.addLabelToCard(cardId, labelId, userDetails.getId());
-
-        return ResponseHandler.generateResponse(
-                "Label added successfully",
-                HttpStatus.OK,
-                null,
-                request.getRequestURI()
-        );
-    }
+//    @Operation(summary = "Add a label to a card")
+//    @ApiResponses(value = {
+//            @ApiResponse(responseCode = "200", description = "Label added successfully"),
+//            @ApiResponse(responseCode = "400", description = "Label already applied or from a different board"),
+//            @ApiResponse(responseCode = "404", description = "Card or label not found")
+//    })
+//    @PostMapping("/{labelId}")
+//    public ResponseEntity<Object> addLabelToCard(
+//            @PathVariable Long cardId,
+//            @PathVariable Long labelId,
+//            @AuthenticationPrincipal CustomUserDetails userDetails) {
+//
+//        cardLabelService.addLabelToCard(cardId, labelId, userDetails.getId());
+//
+//        return ResponseHandler.generateResponse(
+//                "Label added successfully",
+//                HttpStatus.OK,
+//                null,
+//                request.getRequestURI()
+//        );
+//    }
 
     @Operation(summary = "Remove a label from a card")
     @ApiResponses(value = {
