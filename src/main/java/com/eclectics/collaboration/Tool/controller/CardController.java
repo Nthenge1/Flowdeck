@@ -113,15 +113,15 @@ public class CardController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-    @Operation(summary = "Detach a label from a card")
-    @DeleteMapping("/{cardId}/labels/{labelId}")
-    public ResponseEntity<Void> detachLabel(
-            @PathVariable Long cardId,
-            @PathVariable Long labelId,
-            @AuthenticationPrincipal CustomUserDetails userDetails) {
-        cardService.detachLabel(cardId, labelId, userDetails.getId());
-        return ResponseEntity.noContent().build();
-    }
+//    @Operation(summary = "Detach a label from a card")
+//    @DeleteMapping("/{cardId}/labels/{labelId}")
+//    public ResponseEntity<Void> detachLabel(
+//            @PathVariable Long cardId,
+//            @PathVariable Long labelId,
+//            @AuthenticationPrincipal CustomUserDetails userDetails) {
+//        cardService.detachLabel(cardId, labelId, userDetails.getId());
+//        return ResponseEntity.noContent().build();
+//    }
 
     @Operation(summary = "Get all cards assigned to the current user across every board")
     @GetMapping("/assigned-to-me")
